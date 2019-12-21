@@ -28,6 +28,10 @@ public class Member {
         }
     }
 
+    public Member(String username) {
+        this(username, 0,null);
+    }
+
     private void changeTeam(Team team) {
         this.team = team;
         team.getMembers().add(this);
